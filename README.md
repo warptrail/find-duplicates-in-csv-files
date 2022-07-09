@@ -1,0 +1,1 @@
+This project compares two .cvs files and will display the the duplicate values and/or display the values that are unique to each array. 
