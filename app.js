@@ -22,7 +22,8 @@ const csv = require("csv-parser");
     // go to next parse
   });
 
-  // b is from windows with wonky file names
+  // b is from windows with the root file directory
+  // we need to slice the first 10 characters off to get the proper directory names
   fs.createReadStream("./data_b.csv")
   .pipe(csv())
   .on("data", function(data){
